@@ -13,7 +13,6 @@ Wrong user correct password    admin@yours    admin
 Wrong user empty password    admin    ${EMPTY}
 Wrong user wrong password    admin@yours    ggg
 
-
 *** Keywords ***
 Invalid login
     [Arguments]    ${username}    ${password}
