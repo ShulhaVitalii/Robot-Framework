@@ -71,11 +71,22 @@ For run tests:
 	robot -e sanity first_tests.robot (exclude)
 	robot -i sanity -e regresion first_tests.robot (include)
 
+Run tests parallel
+---------------
+https://pypi.org/project/robotframework-pabot/
+pip install robotframework-pabot
+
+pabot --processes 2 --outputdir Results cases\*.robot
+
+Hedless
+----------
+*** Variables ***
+${BROWSER}  headlesschrome  (or headlessfirefox)
 
 
-executable_path="C:/chromedriver/chromedriver.exe"
-
-C:\Users\Admin\AppData\Local\Programs\Python\Python39\Scripts
+To set path to web driver
+------------------
+${BROWSER}  chrome    executable_path="C:/chromedriver/chromedriver.exe"
 
 Variables
 -----------------
