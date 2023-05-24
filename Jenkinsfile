@@ -18,7 +18,7 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                pabot --processes 3 --outputdir Results cases/*.robot
+                robot --outputdir Results cases/*.robot
                 '''
             }
         }
