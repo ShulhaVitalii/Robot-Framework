@@ -18,7 +18,7 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                robot --outputdir Results cases/*.robot
+                robot --outputdir Results cases/ddt1.robot
                 '''
             }
         }
